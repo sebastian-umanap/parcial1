@@ -1,1 +1,27 @@
-<p>vehiculos-list works!</p>
+<div class="table-responsive mt-3">
+  <table class="table align-middle">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Marca</th>
+        <th scope="col">Línea</th>
+        <th scope="col">Modelo</th>
+      </tr>
+    </thead>
+    <tbody *ngIf="!isLoading && !error">
+      <tr *ngFor="let v of vehiculos; index as i">
+        <th scope="row">{{ i + 1 }}</th>
+        <td>{{ v.marca }}</td>
+        <td>{{ v.linea }}</td>
+        <td>{{ v.modelo }}</td>
+      </tr>
+    </tbody>
+
+    <tbody *ngIf="isLoading">
+      <tr><td colspan="4">Cargando...</td></tr>
+    </tbody>
+    <tbody *ngIf="!isLoading && error">
+      <tr><td colspan="4">{{ error }}</td></tr>
+    </tbody>
+  </table>
+</div>
