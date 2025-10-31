@@ -1,0 +1,17 @@
+/* Layout para sticky footer (si ya lo pusiste, no cambies) */
+:host{ min-height:100dvh; display:flex; flex-direction:column; }
+.app-main{ flex:1 1 auto; }
+app-footer{ margin-top:auto; }
+
+/* Banner: ahora su ancho lo controla el .container */
+.hero-banner{
+  width: 100%;
+  height: clamp(220px, 28vw, 360px);
+  background-image: url('/assets/banner.jpg');
+  background-size: cover;
+  background-position: 0% 0%;   /* ← sube el encuadre y “corta” la franja negra */
+  background-repeat: no-repeat;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+}
+

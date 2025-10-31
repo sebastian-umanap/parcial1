@@ -1,0 +1,14 @@
+/* El propio header */
+:host{
+  display: block;
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.app-header{
+  /* + tamaño y padding */
+  font-weight: 700;
+  font-size: clamp(1.15rem, 1.1rem + 0.6vw, 1.6rem);
+  line-height: 1.2;
+  padding: 1.1rem 0;   /* antes ~0.75rem */
+}

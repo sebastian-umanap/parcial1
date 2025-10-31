@@ -1,10 +1,20 @@
 <app-header></app-header>
 
-<img src="assets/banner.jpg" alt="Comercialización de automotores" class="hero-img">
+<main class="app-main">
+  <!-- Banner con el MISMO ancho que header y tabla -->
+  <div class="container">
+    <div class="hero-banner" role="img"
+         aria-label="Comercialización de automotores, nuevos y usados"></div>
+  </div>
 
-<div class="container my-4">
-  <!-- Vista por SELECTOR como exige el enunciado -->
-  <app-vehiculos-list></app-vehiculos-list>
-</div>
+  <!-- Contenido -->
+  <section class="container my-4">
+    <div class="row">
+      <div class="col-12 col-lg-8">
+        <app-vehiculos-list></app-vehiculos-list>
+      </div>
+    </div>
+  </section>
+</main>
 
 <app-footer></app-footer>
